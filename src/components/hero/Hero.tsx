@@ -3,7 +3,7 @@ import ButtonCustom from "../button/ButtonCustom";
 import CardWrapper from "../card/CardWrapper";
 import profile from "@/assets/profile.jpg";
 import RevealOnce from "@/lib/RevealOnce";
-
+// test
 const Hero = () => {
   const goToPortfolio = () => {
     document.getElementById("portfolio")?.scrollIntoView({
