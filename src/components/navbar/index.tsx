@@ -4,8 +4,6 @@ import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState<string>("");
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   const [show, setShow] = useState(true);
   // refs untuk auto-hide yang halus
   const lastScrollYRef = useRef(0);
@@ -13,22 +11,22 @@ const Navbar = () => {
 
   const listNav = ["Home", "Service", "WhyMe", "Portfolio", "Price"];
 
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-    window.addEventListener("resize", handleResize);
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setWindowWidth(window.innerWidth);
+  //   };
+  //   window.addEventListener("resize", handleResize);
 
-    if (windowWidth >= 1024) {
-      setIsMenuToggled(true);
-    } else {
-      setIsMenuToggled(false);
-    }
+  //   if (windowWidth >= 1024) {
+  //     setIsMenuToggled(true);
+  //   } else {
+  //     setIsMenuToggled(false);
+  //   }
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, [windowWidth]);
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, [windowWidth]);
 
   useEffect(() => {
     setActiveLink("home");

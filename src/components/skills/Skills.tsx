@@ -1,23 +1,14 @@
-import {
-  FaReact,
-  FaNodeJs,
-  FaGitAlt,
-  FaDocker,
-  FaServer,
-} from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
 import {
   SiTypescript,
   SiExpress,
   SiSpring,
   SiPostgresql,
   SiMongodb,
-  SiVercel,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import useEmblaCarousel from "embla-carousel-react";
-import type { EmblaOptionsType } from "embla-carousel";
 import Autoplay from "embla-carousel-autoplay";
-import RevealOnce from "@/lib/RevealOnce";
 import StayMotion from "@/lib/StayMotion";
 
 const skills = [
@@ -29,12 +20,6 @@ const skills = [
   { name: "PostgreSQL", icon: SiPostgresql },
   { name: "MongoDB", icon: SiMongodb },
 ];
-
-const options: EmblaOptionsType = {
-  loop: true,
-  align: "start",
-  containScroll: "trimSnaps",
-};
 
 const Skills = () => {
   const [embaRef] = useEmblaCarousel(
