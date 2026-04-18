@@ -17,7 +17,7 @@ const ButtonCustom: React.FC<ButtonCustomProps> = ({
 }) => {
   return (
     <Button
-      className={`w-full h-full  px-6 text-base gap-1 ${colorBtn} cursor-pointer hover:scale-110 active:scale-90 transition duration-300 hover:bg-indigo-600`}
+      className={`w-full h-full px-6 lg:text-base text-sm gap-1 ${colorBtn} cursor-pointer hover:scale-110 active:scale-90 transition duration-300 hover:bg-indigo-600`}
       onClick={functionBtn}
     >
       {labelBtn}

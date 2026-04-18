@@ -6,8 +6,14 @@ interface CardPriceProps {
   price: string;
   points: string[];
   type: string;
+  words: string;
 }
-const CardPrice: React.FC<CardPriceProps> = ({ price, points, type }) => {
+const CardPrice: React.FC<CardPriceProps> = ({
+  price,
+  points,
+  type,
+  words,
+}) => {
   return (
     <div className="flex flex-col text-start gap-10">
       <div>
@@ -22,12 +28,14 @@ const CardPrice: React.FC<CardPriceProps> = ({ price, points, type }) => {
           </div>
         ))}
       </div>
-      <ButtonCustom
-        colorBtn="bg-indigo-600 hover:bg-indigo-600 w-[150px] h-[40px]"
-        labelBtn="Get Started"
-        functionBtn={() => {}}
-        Icon={FiArrowRight}
-      />
+      <a href={words} target="_blank">
+        <ButtonCustom
+          colorBtn="bg-indigo-600 hover:bg-indigo-600 w-[150px] h-[40px]"
+          labelBtn="Get Started"
+          functionBtn={() => {}}
+          Icon={FiArrowRight}
+        />
+      </a>
     </div>
   );
 };

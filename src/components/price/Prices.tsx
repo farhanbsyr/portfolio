@@ -17,6 +17,8 @@ const Prices = () => {
         "Responsive",
         "3x Revision",
       ],
+      words:
+        "https://wa.me/6287852433015?text=Halo%2C%20saya%20tertarik%20dengan%20Paket%20Bronze%20Rp799.000.%20Bisa%20dibantu%20dengan%20detail%20lebih%20lanjut%3F",
     },
     {
       type: "Silver",
@@ -32,6 +34,8 @@ const Prices = () => {
         "5 Crud",
         "API Integration",
       ],
+      words:
+        "https://wa.me/6287852433015?text=Halo%2C%20saya%20tertarik%20dengan%20Paket%20Silver%20Rp1.699.000.%20Saya%20ingin%20tahu%20lebih%20detail%20mengenai%20fitur%20dan%20prosesnya",
     },
     {
       type: "Gold",
@@ -48,6 +52,8 @@ const Prices = () => {
         "API Integration",
         "Payment Gateway",
       ],
+      words:
+        "https://wa.me/6287852433015?text=Halo%2C%20saya%20tertarik%20dengan%20Paket%20Gold%20Rp3.599.000.%20Apakah%20bisa%20dijelaskan%20lebih%20detail%20benefit%20dan%20langkah%20selanjutnya%3F",
     },
   ];
   return (
@@ -68,6 +74,7 @@ const Prices = () => {
                 <RevealOnce delay={0.2 + (index / 10) * 2} key={card.type}>
                   <CardWrapper key={card.type} paddingY="40px" paddingX="40px">
                     <CardPrice
+                      words={card.words}
                       price={card.price}
                       points={card.points}
                       type={card.type}

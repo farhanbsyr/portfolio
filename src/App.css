@@ -9,6 +9,30 @@
 }
 
 .containerCustom {
-  width: 1200px;
-  padding: 70px 80px;
+  max-width: 1080px;
+  padding: 70px 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .containerCustom {
+    max-width: 705px;
+    padding: 30px 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .containerCustom {
+    max-width: 510px;
+    padding: 30px 15px;
+  }
+}
+
+/* Extra kecil (misal HP lama) */
+@media (max-width: 480px) {
+  .containerCustom {
+    padding: 20px 30px;
+  }
 }

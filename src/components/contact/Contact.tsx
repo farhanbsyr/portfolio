@@ -14,11 +14,16 @@ const Contact = () => {
             represent your brand.
           </div>
           <div className="inline-flex gap-4 items-center">
-            <ButtonCustom
-              labelBtn="Launch Your Idea"
-              colorBtn="bg-indigo-600 hover:bg-indigo-600 h-[45px] "
-              functionBtn={() => {}}
-            />
+            <a
+              href="https://wa.me/6287852433015?text=Halo%2C%20saya%20tertarik%20untuk%20membangun%20website%20bersama%20Anda.%20Bisa%20dibantu%20untuk%20informasi%20lebih%20lanjut%3F"
+              target="_blank"
+            >
+              <ButtonCustom
+                labelBtn="Launch Your Idea"
+                colorBtn="bg-indigo-600 hover:bg-indigo-600 h-[45px] "
+                functionBtn={() => {}}
+              />
+            </a>
           </div>
         </div>
       </StayMotion>

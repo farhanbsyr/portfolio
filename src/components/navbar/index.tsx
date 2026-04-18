@@ -127,11 +127,13 @@ const Navbar = () => {
         </div>
 
         <div className="inline-flex items-center gap-8 min-w-[130px] h-[50px]">
-          <ButtonCustom
-            functionBtn={() => {}}
-            labelBtn="Contact Me"
-            colorBtn="bg-indigo-600 rubik"
-          ></ButtonCustom>
+          <a href="https://wa.me/6287852433015" target="_blank">
+            <ButtonCustom
+              functionBtn={() => {}}
+              labelBtn="Contact Me"
+              colorBtn="bg-indigo-600 rubik"
+            ></ButtonCustom>
+          </a>
         </div>
       </div>
     </div>

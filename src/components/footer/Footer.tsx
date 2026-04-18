@@ -3,15 +3,9 @@ import { MdEmail } from "react-icons/md";
 import { IoLocationSharp } from "react-icons/io5";
 import { Input } from "../ui/input";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { Link as ScrollLink } from "react-scroll";
 const Footer = () => {
-  const listNav = [
-    "Home",
-    "Service",
-    "Skills",
-    "Portfolio",
-    "Price",
-    "Contact",
-  ];
+  const listNav = ["Home", "Service", "Skills", "Portfolio", "Price"];
 
   const listIcon = [
     { icon: <FaInstagram />, link: "https://www.instagram.com/farhanbsyr" },
@@ -31,13 +25,18 @@ const Footer = () => {
           </div>
           <div className="flex gap-8  font-semibold rubik text-sm ">
             {listNav.map((item) => (
-              <a
+              <ScrollLink
                 key={item}
+                to={`${item.toLowerCase()}`}
+                smooth={true}
+                duration={1200}
+                offset={-22}
+                spy={true}
                 className="hover:text-indigo-600"
                 href={`#${item.toLowerCase()}`}
               >
                 {item}
-              </a>
+              </ScrollLink>
             ))}
           </div>
         </div>
